@@ -19,6 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="exerciseone.springboot_main" target="1.8" />
+      <module name="exerciseone.springboot_test" target="1.8" />
       <module name="fasttrackmicroservices_main" target="1.5" />
       <module name="fasttrackmicroservices_test" target="1.5" />
     </bytecodeTargetLevel>

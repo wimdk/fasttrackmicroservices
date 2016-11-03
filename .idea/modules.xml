@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exerciseone.springboot/exerciseone.springboot.iml" filepath="$PROJECT_DIR$/.idea/modules/exerciseone.springboot/exerciseone.springboot.iml" group="exerciseone.springboot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exerciseone.springboot/exerciseone.springboot_main.iml" filepath="$PROJECT_DIR$/.idea/modules/exerciseone.springboot/exerciseone.springboot_main.iml" group="exerciseone.springboot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/exerciseone.springboot/exerciseone.springboot_test.iml" filepath="$PROJECT_DIR$/.idea/modules/exerciseone.springboot/exerciseone.springboot_test.iml" group="exerciseone.springboot" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fasttrackmicroservices.iml" filepath="$PROJECT_DIR$/.idea/modules/fasttrackmicroservices.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fasttrackmicroservices_main.iml" filepath="$PROJECT_DIR$/.idea/modules/fasttrackmicroservices_main.iml" group="fasttrackmicroservices" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fasttrackmicroservices_test.iml" filepath="$PROJECT_DIR$/.idea/modules/fasttrackmicroservices_test.iml" group="fasttrackmicroservices" />
