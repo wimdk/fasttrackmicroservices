@@ -27,5 +27,25 @@ Async behaviour by using message queues are essentially ringbuffers, we have an 
 Lookup JSON-LD as an hypermedia-format HAL Collection-JSON
 
 
+#Day 2
+
+## exercise one
+
+- see exercises
+Again spring boot sucks. All goes well as long as you don't have to do exotic things together : getting started with resttemplate was rather easy. Afterwards using resttemplate with xml responses messed everything up...
+TODO : take some time after course to build up the exercise again but not using spring
+
+
+## Hypermedia deep dive
+Hypermedia is like a fluent interface 
+Design an api : focus on capabilities, make sure to hide everything that's related to implementations (lot's of reference to ddd and bounded contexts :-)
+rpc idioms break the web : using headers+payload params makes a service less cacheable
+
+## Scalability
+Must remember to use the term "grandmother antipattern" when talking about stateful systems
+REST services (as mentioned here in this course) are about speedsaving on the human scale (seconds, minutes, hours not milliseconds, microseconds, nanonseconds)
+Collapsed forwarding : when a tsunami of traffic occurs, block all calls, except one. Let this one call retrieve the content and all the other traffic gets the cached content.
+
+
 
 
