@@ -34,7 +34,8 @@ Lookup JSON-LD as an hypermedia-format HAL Collection-JSON
 - see exercises
 Again spring boot sucks. All goes well as long as you don't have to do exotic things together : getting started with resttemplate was rather easy. Afterwards using resttemplate with xml responses messed everything up...
 TODO : take some time after course to build up the exercise again but not using spring
-
+TODO : build a stub to test against
+TODO : add some CDC tests to verify the stub and boost the implementation (focus on the verbs, status codes, validations, non-functionals, ...)
 
 ## Hypermedia deep dive
 Hypermedia is like a fluent interface 
