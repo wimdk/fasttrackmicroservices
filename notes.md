@@ -66,3 +66,16 @@ Important message for this exercise is : see it as a resourceproblem where you h
 ## From monolyths to microservices
 
 
+## Operating microservices
+See microservices operations as more then just an api : vm's, network, ...
+see : [https://neo4j.com/blog/managing-microservices-neo4j/](https://neo4j.com/blog/managing-microservices-neo4j/)
+If a tool is called macgyver it has to be great : [https://github.com/LendingClub/macgyver](https://github.com/LendingClub/macgyver)
+Some signs you are not at microservice levels yet 
+* Different services do coördinated deployments
+* A change in one service has _unexpected_ consequences or require a change in other services
+* Services share a persistent store
+* You cannot change your service's persistence tier without anyone caring
+* Engineers need intimate knowledge of the designs and schemas of other teams' services
+
+
+
