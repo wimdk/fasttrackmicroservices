@@ -27,10 +27,7 @@ public class Application {
             System.out.println(beanName);
         }
 
-        XStreamMarshaller marshaller = new XStreamMarshaller();
 
-
-        XStreamMarshaller unmarshaller = new XStreamMarshaller();
 
 
         HttpHeaders headers = new HttpHeaders();
@@ -46,7 +43,7 @@ public class Application {
                 "<location>takeaway</location>\n" +
                 "</order>";
         HttpEntity<String> request = new HttpEntity<>(body, headers);
-        RestTemplate restTemplate = new RestTemplate(marshaller,unmarshaller);
+        RestTemplate restTemplate = new RestTemplate();
         restTemplate.getMessageConverters().add(new SimpleXmlHttpMessageConverter());
         ResponseEntity<Order> orderResponseEntity = restTemplate.postForEntity("http://172.16.5.55:8080/order", request, Order.class);
 

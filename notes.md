@@ -46,6 +46,23 @@ Must remember to use the term "grandmother antipattern" when talking about state
 REST services (as mentioned here in this course) are about speedsaving on the human scale (seconds, minutes, hours not milliseconds, microseconds, nanonseconds)
 Collapsed forwarding : when a tsunami of traffic occurs, block all calls, except one. Let this one call retrieve the content and all the other traffic gets the cached content.
 
+## Event-driven systems
+A lot of things on atomfeeds, repeat of stuff in the book. 
 
+## Securing microservices
+Not sure I understood this quite well : don't use atomfeeds on the wide web even if tls is used. feeds stay available on the web forever (since immutable hence cacheable), this makes bruteforce attacks feasible on atomfeeds...
+
+#Day 3
+
+## Dealing with distribution
+Distributed systems are hard - no-one with a sane mind would call distributed systems easy.
+look into :https://github.com/real-logic/Aeron
+look into paxos, raft as acid-related alternatives : apparently paxos can fry your brain if you try to understand it. Raft is specifically designed to be an alternative to paxos but better understandable : [https://raft.github.io/](https://raft.github.io/)
+
+## design exercise
+Think about an transactional event with REST for entering massive bank account updates : all the rich people should get it otherwise you're fired
+Important message for this exercise is : see it as a resourceproblem where you have to find out what the right capability is you want to expose as a resource
+
+## From monolyths to microservices
 
 

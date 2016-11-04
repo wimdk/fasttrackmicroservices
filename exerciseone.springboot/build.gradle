@@ -11,11 +11,12 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'gs-rest-hateoas'
+    baseName = 'gs-spring-boot'
     version =  '0.1.0'
 }
 
@@ -27,6 +28,20 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-hateoas")
-    testCompile("com.jayway.jsonpath:json-path")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
+    // tag::jetty[]
+    compile("org.springframework.boot:spring-boot-starter-web") {
+        exclude module: "spring-boot-starter-tomcat"
+    }
+    compile("org.springframework.boot:spring-boot-starter-jetty")
+    // end::jetty[]
+    // tag::actuator[]
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    // end::actuator[]
+    compile("org.springframework:spring-web")
+    compile group: 'org.simpleframework', name: 'simple-xml', version: '2.7.1'
+    compile group: 'org.springframework.android', name: 'spring-android-rest-template', version: '1.0.1.RELEASE'
+    compile group: 'org.springframework', name: 'spring-oxm', version: '4.3.3.RELEASE'
+    //compile group: 'xstream', name: 'xstream', version: '1.2.2'
+    compile("com.fasterxml.jackson.core:jackson-databind")
+    testCompile("junit:junit")
+}

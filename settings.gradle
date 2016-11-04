@@ -1,3 +1,4 @@
 rootProject.name = 'fasttrackmicroservices'
 include 'exerciseone.springboot'
+include 'exerciseone.spark'
 
